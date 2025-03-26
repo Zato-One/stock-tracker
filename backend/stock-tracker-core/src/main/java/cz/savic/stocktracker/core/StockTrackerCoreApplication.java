@@ -1,4 +1,4 @@
-package cz.savic.stocktracker_core;
+package cz.savic.stocktracker.core;
 
 import org.springframework.boot.CommandLineRunner;
 import org.springframework.boot.SpringApplication;

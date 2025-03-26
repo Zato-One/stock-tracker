@@ -9,7 +9,7 @@
 		<relativePath/> <!-- lookup parent from repository -->
 	</parent>
 	<groupId>cz.savic</groupId>
-	<artifactId>stocktracker-core</artifactId>
+	<artifactId>stock-tracker-core</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
 	<name>Stock Tracker Core</name>
 	<description>Java Spring Boot Backend for Stock Tracker app</description>
