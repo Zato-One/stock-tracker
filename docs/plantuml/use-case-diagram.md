@@ -21,7 +21,7 @@ actor "Warehouse Staff" as a_ws
 package "Stock Tracker" {
   usecase "Manage Users" as uc_mu
   usecase "Register Product in System" as uc_rp
-  usecase "Update Stock Level" as uc_usl
+  usecase "Update Stock Quantity" as uc_usq
   usecase "Assign Supplier to Product" as uc_s
   usecase "Add Stock Item" as uc_asi
   usecase "Remove Stock Item" as uc_rsi
@@ -40,7 +40,7 @@ a_m -- uc_vst
 a_m -- uc_rp
 a_a -- uc_mu
 uc_rp --> uc_s
-uc_asi ..> uc_usl : <<include>>
-uc_rsi ..> uc_usl : <<include>>
+uc_asi ..> uc_usq : <<include>>
+uc_rsi ..> uc_usq : <<include>>
 @startuml
 ```
