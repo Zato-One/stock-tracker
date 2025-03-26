@@ -60,6 +60,7 @@ classDiagram
         -AuditLogAction action
         -String entityId
         -String username
+        -String details
         -LocalDateTime timestamp
     }
     
@@ -87,7 +88,7 @@ classDiagram
     StockMovement "*" --> "1" MovementType
     StockMovement "*" --> "1" User : performed by
     Product "*" o-- "1" Supplier : supplied by
-    StockMovement "*" o-- "1" Product
+    StockMovement "*" o-- "1" Product : affects
     User "*" o-- "1" UserRole 
     AuditLog "*" --> "1" EntityName
     AuditLog "*" --> "1" AuditLogAction
