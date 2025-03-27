@@ -6,4 +6,6 @@
 
     <include file="changelog-001-init.sql" relativeToChangelogFile="true"/>
     <include file="changelog-002-stock-quantity-check.sql" relativeToChangelogFile="true"/>
+    <include file="changelog-003-insert-test-data.sql" relativeToChangelogFile="true"/>
+
 </databaseChangeLog>
