@@ -1,23 +1,27 @@
 package cz.savic.stocktracker.core;
 
-import org.springframework.boot.CommandLineRunner;
+import lombok.extern.slf4j.Slf4j;
+import org.springframework.beans.factory.annotation.Value;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
-import org.springframework.context.annotation.Bean;
+import org.springframework.boot.context.event.ApplicationReadyEvent;
+import org.springframework.context.event.EventListener;
 
+@Slf4j
 @SpringBootApplication
 public class StockTrackerCoreApplication {
 
-	public static void main(String[] args) {
-		SpringApplication.run(StockTrackerCoreApplication.class, args);
-	}
+    @Value("${server.port:8080}")
+    private int port;
 
-	@Bean
-	public CommandLineRunner commandLineRunner() {
-		return args -> {
-			System.out.println("Application started: http://localhost:8080/");
-			System.out.println("Swagger UI available at: http://localhost:8080/swagger-ui.html");
-		};
-	}
+    public static void main(String[] args) {
+        SpringApplication.run(StockTrackerCoreApplication.class, args);
+    }
+
+	@EventListener
+	public void onApplicationReady(ApplicationReadyEvent event) {
+        log.info("Application started: http://localhost:{}/", port);
+        log.info("Swagger UI available at: http://localhost:{}/swagger-ui.html", port);
+    }
 
 }
