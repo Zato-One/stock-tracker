@@ -16,8 +16,7 @@ public class StockTrackerCoreApplication {
 	public CommandLineRunner commandLineRunner() {
 		return args -> {
 			System.out.println("Application started: http://localhost:8080/");
-			// TODO - add swagger later
-//			System.out.println("Swagger UI available at: http://localhost:8080/swagger-ui.html");
+			System.out.println("Swagger UI available at: http://localhost:8080/swagger-ui.html");
 		};
 	}
 
