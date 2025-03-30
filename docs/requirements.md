@@ -44,8 +44,7 @@
 1. **Technology Stack:**
     - Backend: Java, Spring Boot, PostgreSQL, Hibernate.
     - Frontend: React.
-    - CI/CD: GitLab CI/CD.
-    - Infrastructure: Docker, Kubernetes.
+    - Infrastructure: Docker.
 2. **Compliance & Standards:**
     - RESTful API design best practices.
 

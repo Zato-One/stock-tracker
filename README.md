@@ -20,7 +20,6 @@ StockTracker is a simple warehouse inventory management system designed to help 
 - **Containerization:** Docker
 - **Version Control:** Git
 - **Build Tool:** Maven
-- **CI/CD:** GitLab CI/CD
 - **Authentication:** Spring Security (JWT-based authentication)
-- **Documentation:** OpenAPI (Swagger)
-- **Diagrams & Documentation:** Mermaid, UML
+- **API documentation:** OpenAPI (Swagger)
+- **Diagrams & Documentation:** Mermaid/PlantUML, UML
